@@ -74,3 +74,6 @@ void play( B& i ) {
 
 ```
 
+## Image
+
+![](https://github.com/UW-COSC-4010-5010-CYBER-FA-2017/foundational-concepts-in-cybersecurity-nix/raw/master/9/Image/giphy.gif)
