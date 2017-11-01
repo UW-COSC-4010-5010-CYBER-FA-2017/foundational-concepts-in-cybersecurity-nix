@@ -1,3 +1,5 @@
+# Least Privilege
+
 ## Exempler:
 This example takes care that the MALWARE app which required Administrator
 priviliges is not allowed to install as a user.
@@ -46,3 +48,6 @@ Please choose option :3
 ................Installing Malware
 ```
 
+## Image
+
+![](https://github.com/UW-COSC-4010-5010-CYBER-FA-2017/foundational-concepts-in-cybersecurity-nix/raw/master/4/Image/giphy.gif)
