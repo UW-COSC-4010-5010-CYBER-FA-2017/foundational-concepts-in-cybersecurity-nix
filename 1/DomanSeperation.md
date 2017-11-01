@@ -32,5 +32,5 @@ Here the domains are not clearly seperated and both refer to the same data and
 thus interfer with each others domains.
 
 ## Image
-
+![](https://github.com/UW-COSC-4010-5010-CYBER-FA-2017/foundational-concepts-in-cybersecurity-nix/raw/master/1/Image/DomainSeperation.gif)
 
