@@ -9,9 +9,10 @@ name "B".
 Once the program is run the the correct objects print the correct domain names
 as follows
 
+```
 Object A has domain A
 Object B has domain B
-
+```
 which is correct way and domains are preserved.
 
 ## NonExample:
@@ -20,9 +21,10 @@ In the non exemplara case both object refers to the same data which global varia
 the domain class. In this example when object A sets its domain as "A" and
 object B sets its domain as "B" we get.
 
-
+```
 Object A has domain B
 Object B has domain B
+```
 
 Here the domains are not clearly seperated and both refer to the same data and
 thus interfer with each others domains.
