@@ -11,14 +11,42 @@ invoded. The play function is modular where an object of one class can replace
 an object of another class (as long as they implement the same interfaces)
 then their respective code gets called.
 ```
-# ./5Exemplar
-A is hopping
-A is skipping
-A is jumping
-B is hopping
-B is skipping
-B is jumping
+class Interface
+{
+public:
+    Interface(){}
+    virtual ~Interface(){}
+    virtual void hop()=0;
+    virtual void skip()=0;
+    virtual void jump()=0;
+};
 
+class A : public Interface
+{
+public:
+    A(){}
+    virtual ~A(){}
+    void hop() { cout << "A is hopping" << endl; }
+    void skip() {cout << "A is skipping" << endl;}
+    void jump() { cout << "A is jumping" <<endl; }
+};
+
+class B : public Interface
+{
+public:
+    B() {}
+    virtual ~B(){}
+    void hop() { cout << "B is hopping" << endl; }
+    void skip() {cout << "B is skipping" << endl;}
+    void jump() { cout << "B is jumping" <<endl; }
+};
+
+
+void play( Interface& i ) {
+    i.hop();
+    i.skip();
+    i.jump();
+}
 ```
 
 
@@ -31,13 +59,38 @@ interfaces are the same we are unable to substitute one for another instead we
 need to use seperate functions for each individual object to achieve the same result.
 
 ```
-# ./5NonExample
-A is hopping
-A is skipping
-A is jumping
-B is hopping
-B is skipping
-B is jumping
+class A
+{
+public:
+    A(){}
+    virtual ~A(){}
+    void hop() { cout << "A is hopping" << endl; }
+    void skip() {cout << "A is skipping" << endl;}
+    void jump() { cout << "A is jumping" <<endl; }
+};
+
+class B
+{
+public:
+    B() {}
+    virtual ~B(){}
+    void hop() { cout << "B is hopping" << endl; }
+    void skip() {cout << "B is skipping" << endl;}
+    void jump() { cout << "B is jumping" <<endl; }
+};
+
+
+void play( A& i ) {
+    i.hop();
+    i.skip();
+    i.jump();
+}
+
+void play( B& i ) {
+    i.hop();
+    i.skip();
+    i.jump();
+}
 
 ```
 
