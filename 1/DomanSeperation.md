@@ -1,3 +1,4 @@
+# Domain Seperation
 ## Exempler:
 
 In this case we are using a domain class. The class has a private data which
@@ -29,5 +30,7 @@ Object B has domain B
 
 Here the domains are not clearly seperated and both refer to the same data and
 thus interfer with each others domains.
+
+## Image
 
 
