@@ -17,7 +17,8 @@ which is correct way and domains are preserved.
 
 ## NonExample:
 
-In the non exemplara case both object refers to the same data which global variable outside
+In the non exemplara case as well we use the same Domain class. Two objects
+are created however both object refers to the same data which global variable outside
 the domain class. In this example when object A sets its domain as "A" and
 object B sets its domain as "B" we get.
 
