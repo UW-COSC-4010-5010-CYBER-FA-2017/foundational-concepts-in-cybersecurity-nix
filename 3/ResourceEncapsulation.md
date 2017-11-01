@@ -1,3 +1,5 @@
+# Resource Encapsulation
+
 ## Exempler:
 We are using a FlagPollResource class which encapsulates the underlying
 functionality and provides only an API access to manipulate the resource in
@@ -37,4 +39,7 @@ Taking the flag off the pole
 => STATUS: Flag is not on the pole
 ```
 
+## Image
+
+![](https://github.com/UW-COSC-4010-5010-CYBER-FA-2017/foundational-concepts-in-cybersecurity-nix/raw/master/3/Image/giphy.gif)
 
