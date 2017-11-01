@@ -9,7 +9,7 @@ using namespace std;
 // Therefore when some objects make changes to the individual state it effects both the objects
 // simultaneously.
 
-std::sting data;
+string data;
 
 class Domain
 {
@@ -22,8 +22,8 @@ public:
 
     }
 
-    printme() {
-        cout << "This is domain : " << data << '\n';
+    void printDomain() {
+        cout << data << '\n';
     }
 };
 
@@ -37,8 +37,11 @@ int main(int argc, char *argv[])
     Domain A( "A" );
     Domain B( "B" );
 
-    A.printme();
-    B.printme();
+    cout << "Object A has domain " ;
+    A.printDomain();
+
+    cout << "Object B has domain ";
+    B.printDomain();
 
     return 0;
 }
