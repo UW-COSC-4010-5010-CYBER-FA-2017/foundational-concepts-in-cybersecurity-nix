@@ -21,7 +21,7 @@ same address space. So when two object are run they will override the address
 space of the other. So the wordprocessor process says that it is running the
 browser program and the browser process is also running the browser program
 ```
-/2NonExample
+# ./2NonExample
 The address space in wordProcessor has browser program
 The address space in browser has browser program
 ```
